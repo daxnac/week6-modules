@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color:  rgb(51, 102, 204);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+    padding: 8px;
+    margin-top: -13px;
+}
+
+nav li:nth-child(1) {
+    float: left;
+    border: 1px solid aliceblue;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+nav li:nth-child(n+2) {
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    padding: 5px 15px 5px 15px;
+}
+
+.module {
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px
+}
+
+.module img {
+    width: 8rem;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: black;
+}
+
+.save {
+    font-size: 1rem;
+    color: red;
+    font-weight: 500;
+}
+
+.rating {
+    text-decoration: none;
+}
+button {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+.jacket-blue {
+    position: relative;
+    z-index: -1;
+}
+
+#jacket-green, .jacket-grey, .jacket-red {
+    display: none;
+    position: relative;
+    z-index: 1;
+    
+}
+#green:hover + #jacket-green {
+    display: block;
+}
+
+#blue {
+    color: blue;
+    border-radius: 100px;
+}
+#green {
+    color: green;
+    border-radius: 100px;
+}
+#grey {
+    color: grey;
+    border-radius: 100px;
+}
+#red {
+    color: red;
+    border-radius: 100px;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+}
+
+nav li:hover {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.headmain  {
+    text-align: center;
+    padding: 70px 15px 15px 15px;
+    background: rgb(25, 51, 103);
+    background: linear-gradient(to top, rgb(25, 51, 103),rgb(0, 153, 204));
+}
+
+.headsub  {
+    padding: 55px 15px 15px 35px;    
+    background: rgb(25, 51, 103);
+    background: linear-gradient(to top, rgb(25, 51, 103),rgb(0, 153, 204));
+}
+
+.fasub {
+    float: left;
+    padding: 20px;
+}
+
+div .fa {
+    color: aliceblue;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+header p {
+    color: aliceblue;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header img {
+    border-radius: 100px;
+}
+
+article {
+    padding: 30px; 
+    text-align: center;
+}
+
+.message {
+    background: rgb(235, 240, 250);
+}
+
+#about {
+    width: 20rem;
+    border: 1.5px solid #2e5cb8;
+    border-radius: 15px;
+    display: inline-block;
+    height: 17rem;
+    padding: 15px;
+    margin: 15px;
+}
+#education {
+    width: 20rem;
+    border: 1.5px solid #2e5cb8;
+    border-radius: 15px;
+    display: inline-block;
+    height: 17rem;
+    padding: 15px;
+    margin: 15px;
+}
+#experience {
+    width: 20rem;
+    border: 1.5px solid #2e5cb8;
+    border-radius: 15px;
+    display: inline-block;
+    height: 17rem;
+    padding: 15px;
+    margin: 15px;
+}
+
+section {
+    padding-left: 50px;
+}
+
+section h2 {
+    text-align: center;
+    color: rgb(51, 102, 204);
+}
+
+section {
+    font-size: 13px;
+    color: dimgray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section li {
+    font-size: 13px;
+    color: dimgray;
+}
+
+article h3 {
+    color: rgb(51, 102, 204);
+}
+
+.bio {
+    text-align:left;
+}
+.bio h3 {
+    border-bottom: 1px solid;
+    
+}
+.interest {
+    text-align: left;
+}
+
+.interest h3 {
+    border-bottom: 1px solid;
+}
+
+.family {
+    text-align: left;
+}
+
+.family h3 {
+    border-bottom: 1px solid;
+}
+
+.experience {
+    text-align: left;
+}
+
+.experience h3 {
+    border-bottom: 1px solid;
+}
+
+.experience span {
+    float:left;
+    text-align: center;
+    width: 100px
+}
+
+.experience ul {
+    margin-left: 7rem;
+}
+
+article .fa-users {
+    float: left;
+    margin: 0px 20px;
+    color: darkkhaki;
+}
+
+article .fa-gamepad {
+    float: left;
+    margin: 0px 20px;
+    color: darkmagenta;
+}
+
+article .fa-globe {
+    float: left;
+    margin: 0px 20px;
+    color: green;
+}
+
+article .fa-camera-retro {
+    float: right;
+    margin: 0px 20px;
+    color: darkslateblue
+}
+
+article .fa-github {
+    color: black;
+    padding: 15px;
+}
+
+article .fa-facebook-square {
+    color: rgb(91, 132, 215);
+    padding: 15px;
+}
+
+article .fa-linkedin-square {
+    color: rgb(0, 172, 230);
+    padding: 15px;
+}
+
+article .fa-twitter-square {
+    color: rgb(0, 204, 204);
+    padding: 15px;
+}
+
+.fa {
+    color: rgb(70, 117, 210);
+}
+
+.footermain {
+    padding-top: 25px;
+    text-align: center;
+    background-color: rgb(25, 51, 103);
+    height: 5rem;
+}
+
+.footersub {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(25, 51, 103);
+    height: auto;
+}
+
+.footersub .fa-github {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.footersub .fa-facebook-square {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.footersub .fa-linkedin-square {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.footersub .fa-twitter-square {
+    color: aliceblue;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: aliceblue;
+}
