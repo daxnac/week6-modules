@@ -9,6 +9,7 @@ nav {
     box-shadow: 0px 0px 5px black;
     padding: 8px;
     margin-top: -13px;
+    z-index: 10;
 }
 
 nav li:nth-child(1) {
@@ -26,15 +27,14 @@ nav li:nth-child(n+2) {
 }
 
 .module {
-    width: 150px;
-    text-align: center;
+    width: 180px;
     padding: 15px;
-    border: 1px solid grey;
-    border-radius: 5px
-}
-
-.module img {
-    width: 8rem;
+    border: .5px solid rgb(217, 230, 242);
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+    display: inline-block;
+    margin: 15px;
+    position: relative;
 }
 
 .strike {
@@ -51,6 +51,7 @@ nav li:nth-child(n+2) {
 .rating {
     text-decoration: none;
 }
+
 button {
     font-size: 16px;
     border-radius: 4px;
@@ -60,40 +61,80 @@ button {
     cursor: pointer;
 }
 
-i {
+.table {
+	display: table;
+	margin: 0px 10px 0px 15px;
+}
+
+.module a {
+    color: blue;
+    width: 99px;
+}
+
+.module:hover {
+    box-shadow:  2px 2px 15px #888888;
     cursor: pointer;
 }
 
-.jacket-blue {
+.module ul {
     position: relative;
-    z-index: -1;
+    margin-bottom: 200px;
 }
 
-#jacket-green, .jacket-grey, .jacket-red {
-    display: none;
-    position: relative;
-    z-index: 1;
-    
+.module li {
+    list-style: none;
+    float: left;
+    padding: 3px 3px 6px 3px;
 }
-#green:hover + #jacket-green {
+
+.module li a {
+    display: inline;
+}
+
+.module img {
+    position: absolute;
+    display: none;
+    margin-left: 15px;
+    right: 0;
+    left: 0;
+    width: 120px;
+}
+
+li:first-child img {
+    background-color:blue;
+    display: block;
+}
+
+li:nth-child(2) img {
+    background-color: green;
+}
+
+li:nth-child(3) img {
+    background-color: red;
+}
+
+li:nth-child(4) img {
+    background-color: grey;
+}
+
+a:hover + img, img:hover {
     display: block;
 }
 
 #blue {
     color: blue;
-    border-radius: 100px;
 }
+
 #green {
     color: green;
-    border-radius: 100px;
 }
+
 #grey {
     color: grey;
-    border-radius: 100px;
 }
+
 #red {
     color: red;
-    border-radius: 100px;
 }
 
 nav li {
@@ -171,6 +212,7 @@ article {
     padding: 15px;
     margin: 15px;
 }
+
 #education {
     width: 20rem;
     border: 1.5px solid #2e5cb8;
@@ -180,6 +222,7 @@ article {
     padding: 15px;
     margin: 15px;
 }
+
 #experience {
     width: 20rem;
     border: 1.5px solid #2e5cb8;
